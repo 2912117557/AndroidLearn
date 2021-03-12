@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jumptofragment2">jumpToFragment2</string>
+    <string name="jumptoregactivity">jumpToRegActivity</string>
+    <string name="link_string">
+        <a href="app://baidu.com">app</a>
+    </string>
+    <string name="chooser_title">应用选择器</string>
+
+    <string name="notifyTitle1">
+        <b>Title</b>
+    </string>
+    <string name="welcomeImageView1">欢迎界面</string>
+    <string name="hint">搜索有趣</string>
+
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigationFragment1"
+        android:title="navigationFragment1"/>
+    <item android:id="@+id/nestedGraph1"
+        android:title="nestedGraph1"/>
+    <item android:id="@+id/navigationFragment4"
+        android:title="nav4"/>
+<!--    <item android:id="@+id/navigationFragment2"-->
+<!--        android:title="nav2"/>-->
+<!--    <item android:id="@+id/navigationFragment3"-->
+<!--        android:title="nav3"/>-->
+<!--    <item android:id="@+id/registerActivity"-->
+<!--        android:title="akd"/>-->
+</menu>

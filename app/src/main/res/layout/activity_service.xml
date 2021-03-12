@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.service.ServiceActivity"
+    android:orientation="vertical">
+
+  <Button
+      android:id="@+id/serviceButton1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onButton1Click"
+      android:text="background"
+      android:textAllCaps="false" />
+
+
+
+  <Button
+      android:id="@+id/serviceButton2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onButton2Click"
+      android:text="stopService"
+      android:textAllCaps="false" />
+
+  <Button
+      android:id="@+id/serviceButton3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onButton3Click"
+      android:text="foregroundNew"
+      android:textAllCaps="false" />
+
+  <Button
+      android:id="@+id/serviceButton4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onButton4Click"
+      android:text="foreground"
+      android:textAllCaps="false" />
+
+  <Button
+      android:id="@+id/serviceButton7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onButton7Click"
+      android:text="updateForeNotification"
+      android:textAllCaps="false" />
+
+  <Button
+      android:id="@+id/serviceButton5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onButton5Click"
+      android:text="foregroundStop"
+      android:textAllCaps="false" />
+
+  <Button
+      android:id="@+id/serviceButton8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onButton8Click"
+      android:text="bind"
+      android:textAllCaps="false" />
+
+  <Button
+      android:id="@+id/serviceButton6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onButton6Click"
+      android:text="stopBind"
+      android:textAllCaps="false" />
+
+  <Button
+      android:id="@+id/serviceButton9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onButton9Click"
+      android:text="toCloseApp"
+      android:textAllCaps="false" />
+
+</LinearLayout>

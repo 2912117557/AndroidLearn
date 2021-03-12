@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigationFragment1">
+    <fragment
+        android:id="@+id/navigationFragment1"
+        android:name="com.example.myapplication.navigation.NavigationFragment1"
+        tools:layout="@layout/fragment_navigation1">
+        <action
+            android:id="@+id/action_navigationFragment1_to_registerActivity"
+            app:destination="@id/registerActivity" />
+        <action
+            android:id="@+id/action_navigationFragment1_to_nestedGraph1"
+            app:destination="@id/nestedGraph1" />
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="http://www.example.com/users/init/{init}" />
+        <argument
+            android:name="init"
+            app:argType="string"
+            android:defaultValue="init" />
+        <action
+            android:id="@+id/action_navigationFragment1_to_navigationFragment4"
+            app:destination="@id/navigationFragment4"
+            />
+    </fragment>
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.example.myapplication.regAndLogin.RegisterActivity" />
+    <navigation android:id="@+id/nestedGraph1"
+        app:startDestination="@id/navigationFragment2">
+        <fragment
+            android:id="@+id/navigationFragment2"
+            android:name="com.example.myapplication.navigation.NavigationFragment2"
+            tools:layout="@layout/fragment_navigation2"
+            android:label="fragment2">
+            <action
+                android:id="@+id/action_navigationFragment2_to_navigationFragment3"
+                app:destination="@id/navigationFragment3" />
+        </fragment>
+        <fragment
+            android:id="@+id/navigationFragment3"
+            android:name="com.example.myapplication.navigation.NavigationFragment3"
+            tools:layout="@layout/fragment_navigation3"
+            android:label="{arg1}">
+            <argument
+                android:name="arg1"
+                android:defaultValue="arg1"
+                app:argType="string" />
+            <deepLink
+                android:id="@+id/deepLink"
+                app:uri="http://www.example.com/users/{arg1}" />
+        </fragment>
+    </navigation>
+    <action android:id="@+id/action_global_navigationFragment1" app:destination="@id/navigationFragment1"/>
+    <fragment
+        android:id="@+id/navigationFragment4"
+        android:name="com.example.myapplication.navigation.NavigationFragment4"
+        android:label="fragment_navigation4"
+        tools:layout="@layout/fragment_navigation4" />
+</navigation>

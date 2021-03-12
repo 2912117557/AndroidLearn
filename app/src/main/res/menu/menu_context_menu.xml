@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/contextMenu1"
+        android:title="set"
+        android:icon="@drawable/ic_launcher"/>
+    <item android:id="@+id/contextMenu2"
+        android:title="set2"/>
+    <item android:id="@+id/contextMenu3"
+        android:title="set3"/>
+    <item android:id="@+id/contextMenu4"
+        android:title="set4"/>
+    <item android:id="@+id/contextMenu5"
+        android:title="set5"/>
+    <item android:id="@+id/contextMenu6"
+        android:title="set6"/>
+    <item android:id="@+id/contextMenu7"
+        android:title="set7"/>
+</menu>

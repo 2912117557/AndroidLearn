@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialogArray">
+        <item>select1</item>
+        <item>select2</item>
+        <item>select3</item>
+        <item>select4</item>
+        <item>select5</item>
+    </string-array>
+    <string-array name="dialogArrayValue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

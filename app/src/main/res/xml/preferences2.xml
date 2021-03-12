@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreferenceCompat
+        app:key="pref2Switch3"
+        app:title="pref2Switch3"
+        />
+
+    <ListPreference
+        app:key="pref2List1"
+        app:title="pref2List1"
+        app:entries="@array/dialogArray"
+        app:entryValues="@array/dialogArrayValue"
+        app:dependency="pref2Switch3"
+        app:useSimpleSummaryProvider="true"/>
+
+    <PreferenceCategory
+        app:key="pref2Category1"
+        app:title="pref2Category1">
+        <SwitchPreferenceCompat
+            app:key="pref2Switch1"
+            app:title="pref2Switch1"
+            app:enabled="false"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

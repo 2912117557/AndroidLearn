@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".animator.AnimatorActivity"
+    >
+
+    <Button
+        android:id="@+id/animatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="valueAnimator"
+        android:textAllCaps="false"
+        android:onClick="onButton1Click"/>
+
+    <Button
+        android:id="@+id/animatorButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="viewGroupChange"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/animatorButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onViewGroupChangeClick"
+        android:text="viewGroupChangeClick"
+        android:textAllCaps="false" />
+
+    <ScrollView
+        android:id="@+id/animatorScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/animatorScrollView1Button1"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:background="@drawable/ic_launcher"
+                android:onClick="onButton2Click"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:background="@drawable/ic_launcher"
+                android:onClick="onButton3Click"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/animatorButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="spring"
+        android:textAllCaps="false"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/animatorImageView1"
+        android:contentDescription="SharedElem"
+        android:transitionName="robot"/>
+
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/scene_root">
+        <include layout="@layout/a_scene" />
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

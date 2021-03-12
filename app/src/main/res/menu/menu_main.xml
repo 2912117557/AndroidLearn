@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myapplication.main.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_search"
+        android:title="search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item android:id="@+id/menuClearHistory"
+        android:title="clearHistory"
+        />
+
+    <item android:id="@+id/menuAdd"
+        android:title="add"/>
+
+    <item android:id="@+id/menuMain1"
+        android:title="main1"
+        android:icon="@drawable/ic_launcher">
+        <menu>
+            <item android:id="@+id/menuMain1_1"
+                android:title="main1_1"/>
+            <item android:id="@+id/menuMain1_2"
+                android:title="main1_2"
+                android:icon="@drawable/ic_launcher"/>
+            <item android:id="@+id/menuMain1_3"
+                android:title="main1_3">
+                <menu>
+                    <item android:id="@+id/menuMain1_3_1"
+                        android:title="main1_3_1"/>
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+    <group android:id="@+id/menuGroup1"
+        android:checkableBehavior="all">
+        <item android:id="@+id/menuMain2"
+            android:title="main2"
+            android:checked="true"
+            />
+
+        <item android:id="@+id/menuMain3"
+            android:title="main3"
+            />
+    </group>
+
+
+</menu>

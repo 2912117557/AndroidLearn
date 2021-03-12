@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="bindingFun"
+            type="com.example.myapplication.main.BindingFunction" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/fragment1Refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/fragment1ScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/fragment1Button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton1Click}"
+                    android:text="recycleViewButton"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton2Click}"
+                    android:text="database"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton3Click}"
+                    android:text="pagedList"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton4Click}"
+                    android:text="work"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton5Click}"
+                    android:text="nav"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton6Click}"
+                    android:text="notify"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="systemUi"
+                    android:textAllCaps="false" />
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/fragment1Button8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onButton8Click"
+                        android:text="snackBar"
+                        android:textAllCaps="false" />
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                <Button
+                    android:id="@+id/fragment1Button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton9Click}"
+                    android:text="dialog"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton10Click}"
+                    android:text="contextMenu"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton11Click}"
+                    android:text="setting"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton12Click}"
+                    android:text="animator"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="animatorClick"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton14Click}"
+                    android:text="service"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton15Click}"
+                    android:text="file"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton16Click}"
+                    android:text="touch"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton17Click}"
+                    android:text="Volley"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton18Click}"
+                    android:text="Location"
+                    android:textAllCaps="false" />
+                <Button
+                    android:id="@+id/fragment1Button19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton19Click}"
+                    android:text="webview"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fragment1Button20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{bindingFun::onButton20Click}"
+                    android:text="ban"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</layout>

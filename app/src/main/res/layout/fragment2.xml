@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/f2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment2TextView1"
+        android:text="https://www.baidu.com/"
+        android:autoLink="web"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment2TextView2"
+        android:text="http://www.example.com/users/myArg1_2"
+        android:autoLink="all"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment2TextView3"
+        android:text="@string/link_string" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment2TextView4"
+        android:text="http://www.example.com/users/init/myInit_2"
+        android:autoLink="all"/>
+
+
+    <TextView
+        android:id="@+id/mm_tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textViewDefault"
+        android:textIsSelectable="true"
+        android:id="@+id/fragment2TextView5"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textViewCustomMenu"
+        android:textIsSelectable="true"
+        android:id="@+id/fragment2TextView6"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textViewSet"
+        android:id="@+id/fragment2TextView7"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment2EditText1"
+        android:text="EditText"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment2EditText2"
+        android:text="EditText2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment2Button1"
+        android:text="load"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="1000px"
+        android:layout_height="500px"
+        android:contentDescription="image"
+        android:id="@+id/fragment2ImageView1"
+        android:scaleType="centerCrop"
+        />
+
+
+</LinearLayout>

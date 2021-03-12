@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".file.ShareFileActivity">
+
+    <ImageView
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="image"
+        android:onClick="onButton1Click"
+        android:scaleType="centerInside"
+        android:id="@+id/shareFileImage1"
+        android:src="@drawable/ic_4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButton2Click"
+        android:text="add"
+        />
+
+</LinearLayout>

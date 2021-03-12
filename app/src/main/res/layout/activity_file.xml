@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fileLinearLayout1"
+    tools:context=".file.FileActivity">
+
+    <Button
+        android:id="@+id/fileButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PriFile"
+        android:textAllCaps="false"
+        android:onClick="onButton1Click"/>
+
+    <Button
+        android:id="@+id/fileButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shareMedia"
+        android:textAllCaps="false"
+        android:onClick="onButton2Click"/>
+    <Button
+        android:id="@+id/fileButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="externalDocument"
+        android:textAllCaps="false"
+        android:onClick="onButton3Click"/>
+
+    <Button
+        android:id="@+id/fileButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="externalDocument2"
+        android:textAllCaps="false"
+        android:onClick="onButton4Click"/>
+
+    <Button
+        android:id="@+id/fileButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="externalDocument3"
+        android:textAllCaps="false"
+        android:onClick="onButton5Click"/>
+
+    <Button
+        android:id="@+id/fileButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getContent"
+        android:textAllCaps="false"
+        android:onClick="onButton6Click"/>
+
+    <ImageView
+        android:id="@+id/fileImage1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_blue_light"
+        android:contentDescription="image"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".main.MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MySystemUiTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.example.myapplication.glideHttps.OkHttpGlideModule"
+            android:value="GlideModule" />
+        <!--        安全浏览检查,false==停用 -->
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="false" />
+        <!--        将匿名诊断数据上传到 Google,true==停用 -->
+        <!--        将匿名诊断数据上传到 Google,true==停用 -->
+        <meta-data
+            android:name="android.webkit.WebView.MetricsOptOut"
+            android:value="true" />
+        <service
+            android:name="com.example.myapplication.service.BackgroundService"
+            android:description="@string/app_name" />
+
+        <activity
+            android:name=".search.SearchActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="com.example.myapplication.MainFragment3" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".search.MySuggestionProvider"
+            android:authorities="com.example.myapplication.search.MySuggestionProvider"
+            android:exported="false" />
+        <provider
+            android:name=".search.MyCustomSuggestionProvider"
+            android:authorities="com.example.myapplication.search.MyCustomSuggestionProvider"
+            android:exported="false" />
+
+        <activity android:name="com.example.myapplication.other.ContextMenuActivity" />
+        <activity android:name=".dialog.DialogActivity" />
+        <activity android:name=".other.NotificationActivity" />
+        <activity android:name=".navigation.NavigationActivity">
+            <!--            android:launchMode="singleTask"-->
+            <!--            android:taskAffinity=".nav">-->
+            <nav-graph android:value="@navigation/nav_graph" />
+        </activity>
+        <activity android:name=".work.WorkActivity" />
+        <activity android:name=".pagedList.PagedListActivity" />
+        <activity android:name=".room.DatabaseActivity" />
+        <activity android:name=".main.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".regAndLogin.LoginActivity"
+            android:parentActivityName=".main.MainActivity" />
+        <activity
+            android:name=".regAndLogin.RegisterActivity"
+            android:parentActivityName=".main.MainActivity"
+            android:theme="@style/Theme.AppCompat.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="www.baidu.com"
+                    android:scheme="https" />
+                <data
+                    android:host="baidu.com"
+                    android:scheme="app" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".regAndLogin.NeedLoginActivity">
+            <intent-filter>
+                <action android:name="com.example.myapplication.NeedLogin" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleView.RecycleViewActivity" />
+        <activity
+            android:name="com.example.myapplication.setting.SettingActivity"
+            android:parentActivityName=".main.MainActivity" />
+        <activity android:name="com.example.myapplication.setting.Setting2Activity" />
+        <activity android:name="com.example.myapplication.animator.AnimatorActivity" />
+        <activity android:name="com.example.myapplication.animator.SharedTransitionActivity" />
+        <activity android:name="com.example.myapplication.service.ServiceActivity" />
+        <activity android:name="com.example.myapplication.file.FileActivity">
+            <intent-filter>
+                <action android:name="com.example.myapplication.FileActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <!--        <activity android:name="com.example.myapplication.file.ShareFileActivity">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="android.intent.action.GET_CONTENT" />-->
+
+        <!--                <category android:name="android.intent.category.DEFAULT" />-->
+        <!--                <category android:name="android.intent.category.OPENABLE" />-->
+
+        <!--                <data android:mimeType="image/*" />-->
+        <!--            </intent-filter>-->
+        <!--        </activity>-->
+
+        <!--        <provider-->
+        <!--            android:name="androidx.core.content.FileProvider"-->
+        <!--            android:authorities="com.example.myapplication.fileprovider"-->
+        <!--            android:exported="false"-->
+        <!--            android:grantUriPermissions="true">-->
+        <!--            <meta-data-->
+        <!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+        <!--                android:resource="@xml/filepaths" />-->
+        <!--        </provider>-->
+        <provider
+            android:name=".file.MyDocumentProvider"
+            android:authorities="com.example.myapplication.file.MyDocumentProvider.documents"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+            </intent-filter>
+        </provider>
+
+        <activity android:name=".other.TouchActivity" />
+        <activity
+            android:name=".other.VolleyActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".other.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".other.WebviewActivity" />
+        <activity
+            android:name=".BanActivity"
+            android:theme="@style/banTheme" />
+
+    </application>
+
+</manifest>

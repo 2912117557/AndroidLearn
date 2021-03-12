@@ -1,0 +1,47 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MySystemUiTheme" parent="AppTheme.NoActionBar">
+        <item name="android:navigationBarColor">#B3FFFFFF</item>
+        <item name="android:statusBarColor">#B3FFFFFF</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStartWithNavigation">0dp</item> <!--设置标题距返回按钮间距-->
+    </style>
+
+    <style name="ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="itemSearchStyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="banTheme" parent="MySystemUiTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>

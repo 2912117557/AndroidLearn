@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        app:fragment="com.example.myapplication.SettingFragment2"
+        app:key="pref1Preference1"
+        app:summary="pref1Preference1Summary,toPref2"
+        app:title="pref1Preference1" />
+
+    <Preference
+        app:key="pref1Preference2"
+        app:summary="pref1Preference2Summary,toSetting2"
+        app:title="pref1Preference2">
+        <intent
+            android:targetPackage="com.example.myapplication"
+            android:targetClass="com.example.myapplication.Setting2Activity" />
+        <extra
+            android:name="example_key"
+            android:value="example_value" />
+    </Preference>
+
+    <PreferenceCategory
+        app:key="pref1Category1"
+        app:title="pref1Category1">
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_launcher"
+            app:key="pref1Switch1"
+            app:title="pref1Switch1" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:initialExpandedChildrenCount="1"
+        app:key="pref1Category2"
+        app:title="pref1Category2">
+        <EditTextPreference
+            app:key="pref1EditText1"
+            app:title="pref1EditText1" />
+        <EditTextPreference
+            app:key="pref1EditText2"
+            app:title="pref1EditText2"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

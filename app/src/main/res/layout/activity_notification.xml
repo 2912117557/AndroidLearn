@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationButton1"
+        android:onClick="onButton1Click"
+        android:text="notify"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationTextView1"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationButton2"
+        android:onClick="onButton2Click"
+        android:text="answer"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationButton3"
+        android:onClick="onButton3Click"
+        android:text="inTimeContact"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationButton4"
+        android:onClick="onButton4Click"
+        android:text="inTimeContactReply"
+        android:textAllCaps="false"
+        />
+
+
+
+
+
+
+
+
+</LinearLayout>
